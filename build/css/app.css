@@ -722,4 +722,113 @@ h3 {
     text-align: left;
   }
 }
+
+.repartidores {
+  padding: 5rem;
+}
+.repartidores__heaving {
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .repartidores__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.repartidores__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.repartidores__texto {
+  line-height: 1.5;
+  color: #455a64;
+}
+.repartidores__enlace {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.repartidores__enlace:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .repartidores__enlace {
+    width: auto;
+  }
+}
+
+.descargar {
+  background-color: #eceeef;
+  padding: 5rem;
+}
+.descargar__grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .descargar__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.descargar__imagen {
+  width: 50%;
+  margin: 5rem auto 0 auto;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .descargar__imagen {
+    margin-top: 0;
+  }
+}
+.descargar__imagen:hover {
+  -webkit-transform: rotate(4deg) scale(1.2);
+          transform: rotate(4deg) scale(1.2);
+}
+
+.tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tiendas__heading {
+  text-align: center;
+  color: #455a64;
+  margin: 2rem 0 0 0;
+}
+.tiendas__texto {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tiendas__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tiendas__enlace {
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+.tiendas__enlace:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 /*# sourceMappingURL=app.css.map */
